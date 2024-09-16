@@ -5,18 +5,24 @@ const Home = () => {
     <div
       style={{
         height: "100vh",
-        padding: "20px",
-        backgroundColor: "#232323",
-        color: "white",
+        padding: "40px",
+        backgroundImage: "linear-gradient(to right, #141E30, #243B55)",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        color: "#E0E0E0",
+        fontFamily: "'Roboto', sans-serif",
+        boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
       }}
     >
       <h1 style={{ fontSize: "48px", marginBottom: "20px" }}>Homepage</h1>
       <ul style={{ listStyle: "none", padding: "0" }}>
-        <li style={{ marginBottom: "10px" }}>
+        {/* <li style={{ marginBottom: "10px" }}>
           <Link to="/help" style={{ color: "#87CEFA", textDecoration: "none" }}>
             Help
           </Link>
-        </li>
+        </li> */}
         <li style={{ marginBottom: "10px" }}>
           <Link
             to="/signinfilled"
@@ -112,6 +118,11 @@ const Home = () => {
             style={{ color: "#87CEFA", textDecoration: "none" }}
           >
             StorytellingOne
+          </Link>
+        </li>
+        <li style={{ marginBottom: "10px" }}>
+          <Link to="/help" style={{ color: "#87CEFA", textDecoration: "none" }}>
+            Help
           </Link>
         </li>
         <li style={{ marginBottom: "10px" }}>
